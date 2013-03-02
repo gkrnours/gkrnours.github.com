@@ -3,20 +3,31 @@
   <head>
 		<title>{{site.title}}{%if page.title%} - {{page.title}}{%endif%}</title>
     {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />
+    <meta name="description" content="{{page.description}}">
     {% endif %}
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" href="/css/screen.css" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="/css/screen.css" type="text/css">
+		<link rel="icon" type="img/gif" href="/favicon.ico">
+		<script type="text/javascript" src="/js/data.js"></script>
+		<script type="text/javascript" src="/js/prototype.js"></script>
+		<script type="text/javascript">
+		</script>
   </head>
-  <body>
-    <div id="page">
-      <div id="header">
-        <a href="/"><h1>{{ site.title }}</h1></a>
-      </div>
-      <div id="body">
-        {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
-        {{ content }}
-      </div>
-    </div>
+	<body>
+<pre>┼───────────────────────────────────────────────────────────
+│ <a href="/" class="title">╔═╝║ ║╔═║╝╔═╝  ║  ╔═║╝╔═║</a>
+│ <a href="/" class="title">║ ║╔╝ ╔╔╝ ══║  ║  ╔═║║╔╔╝</a>
+│ <a href="/" class="title">══╝╝ ╝╝ ╝ ══╝  ══╝╝ ╝╝╝ ╝</a>
+│
+{%if page.title%}│ <a href="/" class="title">{{page.title}}</a>{%endif%}
+{{ content }}
+</pre>
+<ul>
+	<li class="sep">──────────────────</li>
+	<li><a href="/">1234567890123456  </a></li>
+	<li><a href="/">1234567890123456  </a></li>
+	<li><a href="/">1234567890123456  </a></li>
+</ul>
   </body>
 </html>
+<!-- vi: set nowrap: -->
