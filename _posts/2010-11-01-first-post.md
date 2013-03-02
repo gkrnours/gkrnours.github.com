@@ -1,6 +1,8 @@
 ---
 layout: post
+category: "del"
 title: First post
+slug: "First post        "
 tags: [first, post, jekyll, rocks]
 last_updated: 2010-10-07
 ---

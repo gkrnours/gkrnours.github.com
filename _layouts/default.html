@@ -14,20 +14,22 @@
 		</script>
   </head>
 	<body>
-<pre>┼───────────────────────────────────────────────────────────
-│ <a href="/" class="title">╔═╝║ ║╔═║╝╔═╝  ║  ╔═║╝╔═║</a>
-│ <a href="/" class="title">║ ║╔╝ ╔╔╝ ══║  ║  ╔═║║╔╔╝</a>
-│ <a href="/" class="title">══╝╝ ╝╝ ╝ ══╝  ══╝╝ ╝╝╝ ╝</a>
-│
-{%if page.title%}│ <a href="/" class="title">{{page.title}}</a>{%endif%}
+		<ul id="side">
+			<li class="sep">┼──────────────────┼</li>
+			<li>Devel             </li>{%for post in site.posts %}
+			<li><a href="{{post.url}}">{{post.title}}</a></li>
+			{%endfor%}<li class="sep">├──────────────────┼</li>{%for post in site.categories.del %}
+			<li><a href="{{post.url}}">{{post.title}}</a></li>
+			{%endfor%}<li class="sep">└──────────────────┼</li>
+		</ul>
+		<div id="main">
+			<pre id="title">┼───────────────────────────┼───────────────────────────────
+│ <a href="/" class="title">╔═╝║ ║╔═║╝╔═╝  ║  ╔═║╝╔═║</a> │ <b>{{site.description|truncate:29}}</b>
+│ <a href="/" class="title">║ ║╔╝ ╔╔╝ ══║  ║  ╔═║║╔╔╝</a> │ {%if page.title%}<a href="/" class="subtitle">{{page.title|truncate:29}}</a>{%endif%}
+│ <a href="/" class="title">══╝╝ ╝╝ ╝ ══╝  ══╝╝ ╝╝╝ ╝</a> │ {%if page.description%}<span class="subtitle">{{page.description|truncate:29}}</span>{%endif%}
+┼───────────────────────────┘</pre>
 {{ content }}
-</pre>
-<ul>
-	<li class="sep">──────────────────</li>
-	<li><a href="/">1234567890123456  </a></li>
-	<li><a href="/">1234567890123456  </a></li>
-	<li><a href="/">1234567890123456  </a></li>
-</ul>
+		</div>
   </body>
 </html>
 <!-- vi: set nowrap: -->

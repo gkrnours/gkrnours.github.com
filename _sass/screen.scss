@@ -1,4 +1,5 @@
 @import "color";
+@import "tools";
 
 html{
 	background: black;
@@ -8,24 +9,37 @@ body{
 	margin: 0 auto;
 	background: $base03; color: $violet;
 }
-pre{
-	float: left;
+#title{
 	margin: 0;
 	height: 100%;
-	white-space: pre;
-	font-family: "android sans mono", monospace;
+	font-family: "droid sans mono", monospace;
 	font-weight: bold; font-size: 16px;
 	background: $base03; color: $violet;
 	box-shadow: $base03 0px 0px 200px;
+	a{
+		text-decoration: none;
+		&:hover{
+			background-color: $base03;
+		}
+	}
+	b{
+		color: $fushia;
+		font-weight: normal;
+	}
+	.subtitle{
+		font-weight: normal;
+	}
+	a.subtitle{
+		text-decoration: underline;
+		@include over($base03, $base02);
+	}
 }
-b{
-	color: $violet;
-	white-space: pre;
+p{
+	font-family: "droid sans", monospace;
 }
 a{
-	text-decoration: none;
 	color: $violet;
-	background: $base02;
+	@include over($base03, $base02);
 }
 .title{
 	color: $fushia;

@@ -11,28 +11,63 @@ body {
   color: #6c71c4;
 }
 
-pre {
-  float: left;
+#title {
   margin: 0;
   height: 100%;
-  white-space: pre;
-  font-family: "android sans mono", monospace;
+  font-family: "droid sans mono", monospace;
   font-weight: bold;
   font-size: 16px;
   background: #002b36;
   color: #6c71c4;
   box-shadow: #002b36 0px 0px 200px;
 }
+#title a {
+  text-decoration: none;
+}
+#title a:hover {
+  background-color: #002b36;
+}
+#title b {
+  color: #d33682;
+  font-weight: normal;
+}
+#title .subtitle {
+  font-weight: normal;
+}
+#title a.subtitle {
+  text-decoration: underline;
+  background-size: 200%;
+  background-image: -o-linear-gradient(left, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
+  background-image: -moz-linear-gradient(left, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
+  background-image: -webkit-linear-gradient(left, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
+  background-image: linear-gradient(to right, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
+  -webkit-transition: background .5s;
+  -moz-transition: background .5s;
+  -o-transition: background .5s;
+  transition: background .5s;
+}
+#title a.subtitle:hover {
+  background-position: -100%;
+}
 
-b {
-  color: #6c71c4;
-  white-space: pre;
+p {
+  font-family: "droid sans", monospace;
 }
 
 a {
-  text-decoration: none;
   color: #6c71c4;
-  background: #073642;
+  background-size: 200%;
+  background-image: -o-linear-gradient(left, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
+  background-image: -moz-linear-gradient(left, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
+  background-image: -webkit-linear-gradient(left, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
+  background-image: linear-gradient(to right, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
+  -webkit-transition: background .5s;
+  -moz-transition: background .5s;
+  -o-transition: background .5s;
+  transition: background .5s;
+}
+a:hover {
+  background-position: -100%;
 }
 
 .title {
@@ -40,29 +75,34 @@ a {
   font-weight: normal;
 }
 
-ul {
+#side {
   margin: 0;
   padding: 0;
+  float: right;
   background: #002b36;
   display: table;
   font-size: 16px;
 }
-ul li {
+#side li {
   margin: 0;
-  font-family: monospace;
+  font-family: "Droid Sans Mono", monospace;
   white-space: pre;
   list-style: none;
   font-size: 16px;
 }
-ul li::before, ul li::after {
+#side li::before, #side li::after {
   content: "│";
   font-weight: bold;
   color: #6c71c4;
 }
-ul li.sep {
+#side li.sep {
   font-weight: bold;
   color: #6c71c4;
 }
-ul li.sep::before, ul li.sep::after {
-  content: "┼";
+#side li.sep::before, #side li.sep::after {
+  content: "";
+}
+#side li a {
+  display: inline-block;
+  width: 180px;
 }
