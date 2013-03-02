@@ -1,0 +1,25 @@
+ul{
+	margin: 0; padding: 0;
+	background: $base03;
+	display: table;
+	font-size: 16px;
+	li{
+		margin: 0;
+		font-family: monospace;
+		white-space: pre;
+		list-style: none;
+		font-size: 16px;
+		&::before, &::after{
+			content:"│";
+			font-weight: bold; 
+			color: $violet;
+		}
+		&.sep{
+			font-weight: bold;
+			color: $violet;
+			&::before, &::after{
+				content:"┼";
+			}
+		}
+	}
+}
