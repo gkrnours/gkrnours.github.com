@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "del"
+category: "devel"
 title: Second Post
 slug: "Second Post       "
 tags: [second post]

@@ -7,32 +7,7 @@ html{
 body{
 	width: 800px; height: 100%;
 	margin: 0 auto;
-	background: $base03; color: $violet;
-}
-#title{
-	margin: 0;
-	height: 100%;
-	font-family: "droid sans mono", monospace;
-	font-weight: bold; font-size: 16px;
-	background: $base03; color: $violet;
-	box-shadow: $base03 0px 0px 200px;
-	a{
-		text-decoration: none;
-		&:hover{
-			background-color: $base03;
-		}
-	}
-	b{
-		color: $fushia;
-		font-weight: normal;
-	}
-	.subtitle{
-		font-weight: normal;
-	}
-	a.subtitle{
-		text-decoration: underline;
-		@include over($base03, $base02);
-	}
+	background: $base03; color: $base0;
 }
 p{
 	font-family: "droid sans", monospace;
@@ -45,4 +20,5 @@ a{
 	color: $fushia;
 	font-weight: normal;
 }
+@import "title";
 @import "side";

@@ -14,13 +14,14 @@
 		</script>
   </head>
 	<body>
+		<div id="wrap">
 		<ul id="side">
 			<li class="sep">┼──────────────────┼</li>
-			<li>Devel             </li>{%for post in site.posts %}
+			<li class="title">Devel             </li>{%for post in site.categories.devel %}
 			<li><a href="{{post.url}}">{{post.title}}</a></li>
-			{%endfor%}<li class="sep">├──────────────────┼</li>{%for post in site.categories.del %}
+			{%endfor%}<li class="sep">├──────────────────┼</li>
 			<li><a href="{{post.url}}">{{post.title}}</a></li>
-			{%endfor%}<li class="sep">└──────────────────┼</li>
+			<li class="sep">└──────────────────┼</li>
 		</ul>
 		<div id="main">
 			<pre id="title">┼───────────────────────────┼───────────────────────────────
@@ -29,6 +30,7 @@
 │ <a href="/" class="title">══╝╝ ╝╝ ╝ ══╝  ══╝╝ ╝╝╝ ╝</a> │ {%if page.description%}<span class="subtitle">{{page.description|truncate:29}}</span>{%endif%}
 ┼───────────────────────────┘</pre>
 {{ content }}
+		</div>
 		</div>
   </body>
 </html>

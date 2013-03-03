@@ -8,46 +8,7 @@ body {
   height: 100%;
   margin: 0 auto;
   background: #002b36;
-  color: #6c71c4;
-}
-
-#title {
-  margin: 0;
-  height: 100%;
-  font-family: "droid sans mono", monospace;
-  font-weight: bold;
-  font-size: 16px;
-  background: #002b36;
-  color: #6c71c4;
-  box-shadow: #002b36 0px 0px 200px;
-}
-#title a {
-  text-decoration: none;
-}
-#title a:hover {
-  background-color: #002b36;
-}
-#title b {
-  color: #d33682;
-  font-weight: normal;
-}
-#title .subtitle {
-  font-weight: normal;
-}
-#title a.subtitle {
-  text-decoration: underline;
-  background-size: 200%;
-  background-image: -o-linear-gradient(left, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
-  background-image: -moz-linear-gradient(left, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
-  background-image: -webkit-linear-gradient(left, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
-  background-image: linear-gradient(to right, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
-  -webkit-transition: background .5s;
-  -moz-transition: background .5s;
-  -o-transition: background .5s;
-  transition: background .5s;
-}
-#title a.subtitle:hover {
-  background-position: -100%;
+  color: #839496;
 }
 
 p {
@@ -73,6 +34,43 @@ a:hover {
 .title {
   color: #d33682;
   font-weight: normal;
+}
+
+#title {
+  margin: 0;
+  height: 100%;
+  font-family: "droid sans mono", monospace;
+  font-weight: bold;
+  font-size: 16px;
+  background: #002b36;
+  color: #6c71c4;
+  box-shadow: #002b36 0px 0px 200px;
+}
+#title a {
+  text-decoration: none;
+  background-image: none;
+}
+#title b {
+  color: #d33682;
+  font-weight: normal;
+}
+#title .subtitle {
+  font-weight: normal;
+}
+#title a.subtitle {
+  text-decoration: underline;
+  background-size: 200%;
+  background-image: -o-linear-gradient(left, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
+  background-image: -moz-linear-gradient(left, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
+  background-image: -webkit-linear-gradient(left, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
+  background-image: linear-gradient(to right, #002b36 0%, #002b36 50%, #073642 50%, #073642 100%);
+  -webkit-transition: background .5s;
+  -moz-transition: background .5s;
+  -o-transition: background .5s;
+  transition: background .5s;
+}
+#title a.subtitle:hover {
+  background-position: -100%;
 }
 
 #side {
@@ -101,6 +99,10 @@ a:hover {
 }
 #side li.sep::before, #side li.sep::after {
   content: "";
+}
+#side li.title {
+  font-weight: bold;
+  color: #d33682;
 }
 #side li a {
   display: inline-block;

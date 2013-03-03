@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "del"
+category: "devel"
 title: First post
 slug: "First post        "
 tags: [first, post, jekyll, rocks]

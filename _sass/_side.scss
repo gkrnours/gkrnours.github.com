@@ -22,6 +22,10 @@
 				content:"";
 			}
 		}
+		&.title{
+			font-weight: bold;
+			color: $fushia;
+		}
 		a{
 			display: inline-block;
 			width: 180px;
